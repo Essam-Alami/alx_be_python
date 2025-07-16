@@ -1,11 +1,14 @@
-# Assigning values to variables
-temperature = 30
-# Determining weather advice based on temperature
-if temperature > 25:
-    advice = "It's a warm day, wear light clothing."
-elif temperature > 15:
-    advice = "It's a mild day, a light jacket is recommended."
+# Prompt user for weather input
+weather = input("What's the weather like today? (sunny/rainy/cold): ")
+
+# Provide clothing recommendations based on input
+if weather == "sunny":
+    advice = "Wear a t-shirt and sunglasses."
+elif weather == "rainy":
+    advice = "Don't forget your umbrella and a raincoat."
+elif weather == "cold":
+    advice = "Make sure to wear a warm coat and a scarf."
 else:
-    advice = "It's a cold day, wear a warm coat."
-# Printing the advice
-print(advice)
+    advice = "Sorry, I don't have recommendations for this weather."
+
+# Output
